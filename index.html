@@ -1,19 +1,23 @@
 <style>
 
-  button{
+  .doorbell{
     border: 1px solid black;
     padding: 20px 30px;
     background-color: pink;
-    cursor: pointer;
+    cursor: pointer; 
   }
 </style>
 
 <body>
-	<button>hello</button>
+	<button class="doorbell">hello</button>
 
 	<script>
-    function bgChange
-		document.body.style.backgroundColor = 'red'
-
+    function bgChange () {
+		document.body.style.backgroundColor = 'green'
+    }
+    
+    const button = document.querySelector('.doorbell')
+    button.addEventListener('click', bgChange)
+    
 	</script>
 </body>
